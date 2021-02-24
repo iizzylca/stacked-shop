@@ -6,8 +6,8 @@ const Menu = () => {
 
     return(
         <div>
-            <object data={Pdf} type="application/pdf" style={{ width: '100vw', height: '100vh' }}>
-                <iframe title='pdf-file' src={Pdf} style={{ width: '100vw', height: '100vh' }}>
+            <object className='pdf-wrap' data={Pdf} type="application/pdf" style={{ width: '100vw', height: '100vh' }}>
+                <iframe className='pdf-file' title='pdf-file' src={Pdf} style={{ width: '100vw', height: '100vh' }}>
                 </iframe>
             </object>
         </div>

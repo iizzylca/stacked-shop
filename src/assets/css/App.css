@@ -26,6 +26,17 @@ a:hover{
 
 }
 
+@media only screen and (min-width: 280px) and (orientation: portrait){
+    .background-img{
+        background-attachment: scroll;
+        background-position-x: 50%;
+        background-position-y: 0%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+}
+
     .footer-img {
         width: 140px;
         height: 155px;
@@ -203,5 +214,17 @@ a:hover{
     @media only screen and (min-width: 1366px) and (orientation: landscape) {
         .info-container{
             width: inherit;
+        }
+    }
+
+    @media only screen and (min-width: 375px) and (orientation: portrait) {
+        .pdf{
+            width: '100vw';
+            height: '100vh';
+
+        }
+        .pdf-file{
+            width: '100vw';
+            height: '100vh';
         }
     }

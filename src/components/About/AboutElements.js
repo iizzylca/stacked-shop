@@ -25,12 +25,11 @@ export const AboutContainer = styled.div`
 
     @media only screen and (min-width: 280px) and (orientation: portrait){
         background-attachment: scroll;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-        url(${HeadPic});        
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        height: 100vh
+        background-position-x: 50%;
+        background-position-y: 0%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
     }
     
     
@@ -68,12 +67,11 @@ export const MoreContainer = styled.div`
     
     @media only screen and (min-width: 280px) and (orientation: portrait){
         background-attachment: scroll;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-        url(${InfoPic});        
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        height: 100vh
+        background-position-x: 50%;
+        background-position-y: 0%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
     }
     
 
