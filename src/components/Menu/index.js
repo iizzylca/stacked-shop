@@ -1,18 +1,17 @@
-import React from 'react';
-import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
-import filePDF from '../../docs/Stacked-menu.pdf'
+import React from 'react'
 
-function Menu() {
-    return (
-        <div className="Menu">
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js">
-                <div id="pdfviewer">
-                    <Viewer fileUrl={filePDF} /> 
-                </div>
-            </Worker>
+import Pdf from '../../docs/Stacked-menu.pdf'
+
+const Menu = () => {
+
+    return(
+        <div>
+            <object data={Pdf} type="application/pdf" style={{ width: '100vw', height: '100vh' }}>
+                <iframe title='pdf-file' src={Pdf} style={{ width: '100vw', height: '100vh' }}>
+                </iframe>
+            </object>
         </div>
-    );
-    }
-    
-export default React.memo(Menu);
+    )
+}
+
+export default Menu 
