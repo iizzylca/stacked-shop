@@ -1,22 +1,51 @@
 import React from 'react'
-import {MainContainer, MainContent, MainItems, MainH1, MainHr, MainP, SubP} from './MainElements'
-
+import {MainContainer, MainContent, MainItems, MainH1, MainHr, MainP, SubP, SocialIcons, SocialIconLink} from './MainElements'
+import {FaFacebook, FaInstagram} from 'react-icons/fa';
+import {useState} from 'react'
+import NavBar from '../Navbar';
+import Sidebar from '../Sidebar';
 
 
 const Main = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
     
     return (
         <>
-            <MainContainer>
-                <MainContent>
-                    <MainItems>
-                        <MainH1 className='main-h1'>STACKED SANDWICH SHOP</MainH1>
-                        <MainHr/>
-                        <MainP> 9 Days</MainP>
-                        <SubP>Opening Our Doors March 1st</SubP>
-                    </MainItems>
-                </MainContent>
-            </MainContainer>
+            <div className='background-img'>
+                <NavBar toggle={toggle}/>
+                <Sidebar isOpen={isOpen} toggle={toggle}/>
+                <MainContainer>
+                    <MainContent>
+                        <MainItems>
+                            <MainH1 className='main-h1'>STACKED SANDWICH SHOP</MainH1>
+                            <MainHr/>
+                            <MainP>7 days Left</MainP>
+                            <SubP>Coming Soon March 3rd</SubP>
+                            <SocialIcons>
+                                <SocialIconLink 
+                                    href='https://www.facebook.com/Stacked-105998624816226'
+                                    target='_blank'
+                                    aria-label='Redirect to Facebook'
+                                    rel='noopener noreferrer'>
+                                    <FaFacebook />
+                                </SocialIconLink>
+                                <SocialIconLink 
+                                    href='https://www.instagram.com/stacked_sandwich_shop'
+                                    target='_blank'
+                                    aria-label='Redirect to Instagram'
+                                    rel='noopener noreferrer'>
+                                    <FaInstagram />
+                                </SocialIconLink> 
+                            </SocialIcons>
+                        </MainItems>
+                    </MainContent>
+                </MainContainer>
+
+            </div>
         </>
     )
 } 

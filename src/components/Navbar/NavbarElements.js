@@ -2,48 +2,78 @@ import styled from 'styled-components';
 import {NavLink as Link} from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
 
+
+// border: 1px solid black;
 export const Nav = styled.nav`
 
-    height: 30vh;
+    background: transparent;
+    height: 40vh;
     position: relative;
     display: flex;
     justify-content: center;
     font-weight: 700;
+
+    @media only screen and (min-width: 812px) and (orientation: landscape) {
+        display: grid;
+        height: inherit;
+    }
+
+    @media only screen and (min-width: 568px) and (orientation: landscape){
+        display: grid;
+        height: inherit;
+    }
+
+    @media only screen and (min-width: 1024px) and (orientation: portrait) {
+        display: grid;
+        height: inherit;
+    }
+    
 `;
 
+// border: 1px solid pink;
 export const NavLink = styled(Link)`
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     cursor: pointer;
 
-    @media screen and (max-width: 400px) {
-        flex-direction: column;
-        
-}
 `;
 
+
+// border: 1px solid black;
 export const LogoImg = styled.img`
-    width: 165px;
-    height: 175px;
+
+    color: white;
+    width: 275px;
+    height: auto;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        max-width: 225px;
+        height: auto;
+    }
+
 `;
 
 
+// border: 1px solid red;
 export const NavIcon = styled.div`
-    display: block;
+
+    display: flex;
     position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translate(-10px, -50%);
+    top: 10%;
+    right: 2%;
     cursor: pointer;
-    color: ivory;
+    color: white;
 
 `;
 
+
+// border: 1px solid orange;
 export const Bars = styled(FaBars)`
-    font-size: 2rem;
-    width: 45px;
-    height: 45px;
+
+    width: 40px;
+    height: 40px;
 
 `;

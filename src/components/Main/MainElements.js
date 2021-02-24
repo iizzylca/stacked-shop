@@ -1,57 +1,113 @@
 import styled from 'styled-components';
-
-
+    
+// border: 1px solid black;
 export const MainContainer = styled.div`
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
 
+    height: 100%;
     
 `;
 
+
+// border: 1px solid green;
 export const MainContent = styled.div`
-    height: calc(100vh - 80px);
-    max-height: 100%;
+
+    height: 100%;
     padding: 0rem calc((100vw - 1300px) / 2);
+
+
 `;
 
+
+// border: 1px solid red;
 export const MainItems = styled.div`
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
-    max-height: 100%;
-    padding: 0 2rem;
-    width: 650px;
-    color: #fff;
+    width: auto;
+    color: white;
+    font-family: 'Sedgwick Ave Display';
     text-transform: uppercase;
-    line-height: 1;
-    font-weight: bold;
-    @media screen and (max-width: 650px) {
-        width: 100%;
+
+
+    @media only screen and (min-width: 812px) and (orientation: landscape) {
+        height: inherit;
     }
+
+    @media only screen and (min-width: 568px) and (orientation: landscape){
+        height: inherit;
+    }
+
+
+    @media only screen and (min-width: 1024px) and (orientation: portrait) {
+        height: 80vh;
+    }
+
+    @media only screen and (min-width: 1366px) and (orientation: landscape) {
+        height: 100vh;
+    }
+
 `;
 
+// border: 1px solid blue;
 export const MainH1 = styled.h1`
-    font-size: clamp(2.5rem, 10vw, 5rem);
-    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: clamp(4rem, 10vw, 5rem);
+    margin-bottom: 2rem;
+
     
 `;
 
 export const MainHr = styled.hr`
-    margin: auto;
-    width: 40%;
-`
+    width: 65%;
 
+`
+// border: 1px solid blue;
 export const MainP = styled.p`
-    font-size: clamp(2rem, 2.5vw, 3rem);
+
+    font-size: clamp(1.75rem, 2.5vw, 5rem);
     margin-bottom: 2rem;
+
+    
+`;
+
+// border: 1px solid blue;
+export const SubP = styled.p`
+
+    font-size: clamp(1.75rem, 2.5vw, 3rem);
+    margin-bottom: 2rem;
+    
+    
+`;
+
+// border: 1px solid blue;
+export const SocialIcons = styled.div`
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 240px;
+    margin-bottom: 4rem;
+
+
 `;
 
 
-export const SubP = styled.button`
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
+// border: 1px solid blue;
+export const SocialIconLink = styled.a`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+
     
 `;

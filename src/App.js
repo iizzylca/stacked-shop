@@ -1,16 +1,15 @@
 import React from 'react'
 import './assets/css/App.css';
 import Routes from './routes/routes'
-import Navbar from './components/Navbar'
-// import Sidebar from './components/Sidebar'
+
 
 function App() {
+  
   return (
     <>
-      <Navbar/>
-        <Routes/>
+      <Routes/>
     </>
   );
 }
 
-export default App;
+export default React.memo(App);
