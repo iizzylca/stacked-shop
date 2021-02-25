@@ -23,7 +23,7 @@ export const AboutContainer = styled.div`
     color: white;
     padding: 0 1rem;
 
-    @media only screen and (min-width: 280px) and (orientation: portrait){
+    @media only screen and (min-width: 375px) and (max-width: 767px) {
         background-attachment: scroll;
         background-position-x: 50%;
         background-position-y: 0%;
@@ -65,7 +65,7 @@ export const MoreContainer = styled.div`
     font-family: 'Montserrat';
     padding: 0 2.5rem;
     
-    @media only screen and (min-width: 280px) and (orientation: portrait){
+    @media only screen and (min-width: 375px) and (max-width: 767px){
         background-attachment: scroll;
         background-position-x: 50%;
         background-position-y: 0%;

@@ -75,16 +75,7 @@ a:hover{
 
 }
 
-@media only screen and (min-width: 280px) and (orientation: portrait){
-    .background-img{
-        background-attachment: scroll;
-        background-position-x: 50%;
-        background-position-y: 0%;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-    }
-}
+
 
     .footer-img {
         width: 140px;
@@ -156,6 +147,17 @@ a:hover{
         src: url(../../font/SedgwickAveDisplay-Regular.ttf);
         font-style: normal;
         font-weight: 300;
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 767px) {
+        .background-img{
+            background-attachment: scroll;
+            background-position-x: 50%;
+            background-position-y: 0%;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+        }
     }
 
     @media only screen and (min-width: 812px) and (orientation: landscape) {
