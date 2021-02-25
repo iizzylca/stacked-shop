@@ -1,17 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Loader from './Loader';
+import { Document, Page, pdfjs } from 'react-pdf';
+import ControlPanel from './ControlPanel';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-import Pdf from '../../docs/Stacked-menu.pdf'
+export default function Test() {
+    const [scale, setScale] = useState(1.0);
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
+    const [isLoading, setIsLoading] = useState(true);
 
-const Menu = () => {
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+        setIsLoading(false);
+    }
 
-    return(
+    return (
         <div>
-            <object className='pdf-wrap' data={Pdf} type="application/pdf" style={{ width: '100vw', height: '100vh' }}>
-                <iframe className='pdf-file' title='pdf-file' src={Pdf} style={{ width: '100vw', height: '100vh' }}>
-                </iframe>
-            </object>
+        <Loader isLoading={isLoading} />
+        <section
+            id="pdf-section"
+            className="d-flex flex-column align-items-center w-100"
+        >
+            <ControlPanel
+            scale={scale}
+            setScale={setScale}
+            numPages={numPages}
+            pageNumber={pageNumber}
+            setPageNumber={setPageNumber}
+            file="/assets/docs/Stacked-menu.pdf"
+            />
+            <Document
+            file="/assets/docs/Stacked-menu.pdf"
+            onLoadSuccess={onDocumentLoadSuccess}
+            >
+            <Page pageNumber={pageNumber} scale={scale} />
+            </Document>
+        </section>
         </div>
-    )
+    );
 }
-
-export default Menu 

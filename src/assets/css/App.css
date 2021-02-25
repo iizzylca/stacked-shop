@@ -6,6 +6,55 @@ body, html {
     
 }
 
+
+.App {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-logo {
+height: 30vmin;
+pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+    animation: App-logo-spin infinite 5s linear;
+}
+}
+
+@keyframes App-logo-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+#loader {
+z-index: 1;
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(155, 155, 155, 0.7);
+}
+
+.clickable {
+cursor: pointer;
+}
+
+
+
 a{
     text-decoration: none;
     color: black;
@@ -18,7 +67,7 @@ a:hover{
 
 .background-img{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url('../../images/wall-background3.jpg');
+    url('../../images/stacked-wall2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,28 +96,6 @@ a:hover{
         height: 175px;
     }
 
-    #pdfviewer {
-        width: 600px;
-        margin: 0 auto;
-    }
-    #pdfviewer .viewer-layout-toolbar {
-        background: #000;
-        color: #fff;
-    }
-    
-    #pdfviewer .viewer-icon{
-        stroke: #fff;
-        stroke-width: 3px;
-    }
-    
-    #pdfviewer .viewer-zoom-popover-target-arrow {
-        border-color: rgb(255 255 255 / 90%) transparent transparent;
-    }
-    
-    #pdfviewer .viewer-menu-item-label, #pdfviewer .viewer-search-popover-label, #pdfviewer .viewer-menu, #pdfviewer .viewer-menu .viewer-icon{
-        color: #000;
-        stroke: #000;
-    }
 
     .info-container{
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -122,6 +149,13 @@ a:hover{
     .info-wrap p{
         font-size: clamp(0.75rem, 2vw, 1rem);
         letter-spacing: 1px;
+    }
+
+    @font-face {
+        font-family: 'Sedgwick Ave Display';
+        src: url(../../font/SedgwickAveDisplay-Regular.ttf);
+        font-style: normal;
+        font-weight: 300;
     }
 
     @media only screen and (min-width: 812px) and (orientation: landscape) {
@@ -218,12 +252,12 @@ a:hover{
     }
 
     @media only screen and (min-width: 375px) and (orientation: portrait) {
-        .pdf{
+        .pdf-wrap{
             width: '100vw';
             height: '100vh';
 
         }
-        .pdf-file{
+        .pdf{
             width: '100vw';
             height: '100vh';
         }
