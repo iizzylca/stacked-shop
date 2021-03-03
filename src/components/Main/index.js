@@ -23,7 +23,7 @@ const Main = () => {
                         <MainItems>
                             <MainH1 className='main-h1'>STACKED SANDWICH SHOP</MainH1>
                             <MainHr/>
-                            <MainP>Deliveries Available Sunday March 7th</MainP>
+                            <MainP></MainP>
                             <MainBtn 
                                 href='https://www.toasttab.com/Stacked-Sandwich-Shop'
                                 target='_blank'

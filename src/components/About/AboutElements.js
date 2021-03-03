@@ -29,18 +29,27 @@ export const AboutContainer = styled.div`
         background-position-y: 0%;
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: auto 100%;
+        background-size: 100% 100%;
     }
     
     
 `;
 
 export const HeadH1 = styled.h1`
-    font-size: clamp(4rem, 10vw, 5rem);
+    font-size: clamp(3.5rem, 10vw, 4.5rem);
     font-family: 'Sedgwick Ave Display';
     text-transform: uppercase;
 `;
 
+export const MainP = styled.p`
+    font-family: 'Sedgwick Ave Display';
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    
+`;
 
 export const MoreContainer = styled.div`
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),

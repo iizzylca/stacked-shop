@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {AboutContainer, MoreContainer, HeadH1, InfoH1, InfoP, AboutButton} from './AboutElements'
+import {AboutContainer, MoreContainer, HeadH1, MainP, InfoH1, InfoP, AboutButton} from './AboutElements'
 import {useState} from 'react'
 import NavBar from '../Navbar';
 import Sidebar from '../Sidebar';
@@ -23,6 +23,7 @@ const About = () => {
             </div>
             <AboutContainer className='about-us-page'>
                 <HeadH1 className='pic-title-head'>Know More About Us</HeadH1>
+                <MainP> We are Open! Pick Up Only / Delivery Available Sunday March 7th</MainP>
             </AboutContainer>
             <MoreContainer className='about-extra-box'>
                 <InfoH1> Our Story...</InfoH1>
