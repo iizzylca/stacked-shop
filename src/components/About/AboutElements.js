@@ -29,7 +29,7 @@ export const AboutContainer = styled.div`
         background-position-y: 0%;
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: 125% 100%;
     }
     
     
