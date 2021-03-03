@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
 
     height: 100%;
-    
+    width: 100%
 `;
 
 
@@ -35,24 +35,20 @@ export const MainItems = styled.div`
 
     @media only screen and (min-width: 812px) and (orientation: landscape) {
         height: inherit;
-        width: 100%;
     }
 
     @media only screen and (min-width: 568px) and (orientation: landscape){
         height: inherit;
-        width: 100%;
     }
 
 
     @media only screen and (min-width: 1024px) and (orientation: portrait) {
         height: 80vh;
-        width: 100%;
 
     }
 
     @media only screen and (min-width: 1366px) and (orientation: landscape) {
         height: 100vh;
-        width: 100%;
     }
 
 `;
