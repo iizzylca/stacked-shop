@@ -16,16 +16,19 @@ export const Nav = styled.nav`
     @media only screen and (min-width: 812px) and (orientation: landscape) {
         display: grid;
         height: inherit;
+        width: 100%;
     }
 
     @media only screen and (min-width: 568px) and (orientation: landscape){
         display: grid;
         height: inherit;
+        width: 100%;
     }
 
     @media only screen and (min-width: 1024px) and (orientation: portrait) {
         display: grid;
         height: inherit;
+        width: 100%;
     }
     
 `;

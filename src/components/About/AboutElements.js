@@ -23,13 +23,13 @@ export const AboutContainer = styled.div`
     color: white;
     padding: 0 1rem;
 
-    @media only screen and (min-width: 375px) and (max-width: 767px) {
+    @media only screen and (min-width: 320px) and (max-width: 820px) {
         background-attachment: scroll;
         background-position-x: 50%;
         background-position-y: 0%;
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: 125% 100%;
+        background-size: 110% 100%;
     }
     
     
