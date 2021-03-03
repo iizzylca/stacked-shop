@@ -1,5 +1,5 @@
 import React from 'react'
-import {MainContainer, MainContent, MainItems, MainH1, MainHr, MainP, SubP, SocialIcons, SocialIconLink} from './MainElements'
+import {MainContainer, MainContent, MainItems, MainH1, MainHr, MainBtn, SocialIcons, SocialIconLink} from './MainElements'
 import {FaFacebook, FaInstagram} from 'react-icons/fa';
 import {useState} from 'react'
 import NavBar from '../Navbar';
@@ -23,8 +23,13 @@ const Main = () => {
                         <MainItems>
                             <MainH1 className='main-h1'>STACKED SANDWICH SHOP</MainH1>
                             <MainHr/>
-                            <MainP>7 days Left</MainP>
-                            <SubP>Coming Soon March 3rd</SubP>
+                            <MainBtn 
+                                href='https://www.toasttab.com/Stacked-Sandwich-Shop'
+                                target='_blank'
+                                aria-label='Redirect to Toast'
+                                rel='noopener noreferrer'>
+                                    Order Now
+                            </MainBtn>
                             <SocialIcons>
                                 <SocialIconLink 
                                     href='https://www.facebook.com/Stacked-105998624816226'

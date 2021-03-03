@@ -70,21 +70,39 @@ export const MainHr = styled.hr`
 
 `
 // border: 1px solid blue;
-export const MainP = styled.p`
+// export const MainP = styled.p`
 
-    font-size: clamp(1.75rem, 2.5vw, 5rem);
-    margin-bottom: 2rem;
+//     font-size: clamp(1.75rem, 2.5vw, 5rem);
+//     margin-bottom: 2rem;
 
     
-`;
+// `;
 
 // border: 1px solid blue;
-export const SubP = styled.p`
+// export const SubP = styled.p`
 
-    font-size: clamp(1.75rem, 2.5vw, 3rem);
+//     font-size: clamp(1.75rem, 2.5vw, 3rem);
+//     margin-bottom: 2rem;
+    
+    
+// `;
+
+export const MainBtn = styled.a`
+    font-size: clamp(1.4rem, 5vw, 1.80rem);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #e31837;
+    color: #fff;
+    transition: 0.2s ease-out;
     margin-bottom: 2rem;
-    
-    
+
+    &:hover {
+        background: #ffc500;
+        transition: 0.2s ease-out;
+        cursor: pointer;
+        color: #000;
+    }
 `;
 
 // border: 1px solid blue;
@@ -107,7 +125,7 @@ export const SocialIconLink = styled.a`
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 30px;
+    font-size: 32px;
 
     
 `;

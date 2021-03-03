@@ -16,23 +16,21 @@ export default function Test() {
     }
 
     return (
-        <div>
+        <div className='pdf-main'>
         <Loader isLoading={isLoading} />
-        <section
-            id="pdf-section"
-            className="d-flex flex-column align-items-center w-100"
-        >
+        <section id="pdf-section" className="d-flex flex-column align-items-center w-100">
             <ControlPanel
-            scale={scale}
-            setScale={setScale}
-            numPages={numPages}
-            pageNumber={pageNumber}
-            setPageNumber={setPageNumber}
-            file="/assets/docs/Stacked-menu.pdf"
+                scale={scale}
+                setScale={setScale}
+                numPages={numPages}
+                pageNumber={pageNumber}
+                setPageNumber={setPageNumber}
+                file="/assets/docs/Stacked-menu-first.pdf"
             />
             <Document
-            file="/assets/docs/Stacked-menu.pdf"
-            onLoadSuccess={onDocumentLoadSuccess}
+                className='pdf'
+                file="/assets/docs/Stacked-menu-first.pdf"
+                onLoadSuccess={onDocumentLoadSuccess}
             >
             <Page pageNumber={pageNumber} scale={scale} />
             </Document>

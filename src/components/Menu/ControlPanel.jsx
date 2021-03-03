@@ -50,11 +50,11 @@ const ControlPanel = (props) => {
     <div className="control-panel m-3 p-3 d-flex align-items-baseline justify-content-between">
       <div className="d-flex justify-content-between align-items-baseline">
         <i
-          className={`fa fa-backward mx-3 ${firstPageClass}`}
+          className={`fa fa-fast-backward mx-3 ${firstPageClass}`}
           onClick={goToFirstPage}
         />
         <i
-          className={`fa fa-fast-backward mx-3 ${firstPageClass}`}
+          className={`fa fa-backward mx-3 ${firstPageClass}`}
           onClick={goToPreviousPage}
         />
         <span>
@@ -91,7 +91,7 @@ const ControlPanel = (props) => {
         />
       </div>
       <div className="mx-3">
-        <a href="/assets/docs/Stacked-menu.pdf" download={true} title="download">
+        <a href="/assets/docs/Stacked-menu-first.pdf" download={true} title="download">
           <i className="fa fa-download clickable" />
         </a>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink} from "./SidebarElements";
+import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute} from "./SidebarElements";
 
 function Sidebar({isOpen, toggle}){
     return (
@@ -12,6 +12,16 @@ function Sidebar({isOpen, toggle}){
                 <SidebarLink to='/menu'>Menu</SidebarLink>
                 <SidebarLink to='/about'>About</SidebarLink>
             </SidebarMenu>
+            <SideBtnWrap>
+                <SidebarRoute
+                href='https://www.toasttab.com/Stacked-Sandwich-Shop'
+                target='_blank'
+                aria-label='Redirect to Toast'
+                rel='noopener noreferrer'
+                >
+                    Order Now
+                </SidebarRoute>
+            </SideBtnWrap>
                 
         </SidebarContainer>
     )

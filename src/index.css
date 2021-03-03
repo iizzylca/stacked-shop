@@ -14,9 +14,9 @@ code {
 
 
 .control-panel {
-  font-size: 16px;
+  font-size: 18px;
   color: black;
-  background-color: white;
+  background-color: ivory;
   border-radius: 5px;
   width: fit-content;
 }
