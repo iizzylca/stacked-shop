@@ -27,6 +27,7 @@ export const MainItems = styled.div`
     align-items: center;
     height: 100vh;
     width: auto;
+    padding: 0 2rem;
     color: white;
     font-family: 'Sedgwick Ave Display';
     text-transform: uppercase;
@@ -43,6 +44,7 @@ export const MainItems = styled.div`
 
     @media only screen and (min-width: 1024px) and (orientation: portrait) {
         height: 80vh;
+
     }
 
     @media only screen and (min-width: 1366px) and (orientation: landscape) {
@@ -70,13 +72,16 @@ export const MainHr = styled.hr`
 
 `
 // border: 1px solid blue;
-// export const MainP = styled.p`
-
-//     font-size: clamp(1.75rem, 2.5vw, 5rem);
-//     margin-bottom: 2rem;
+export const MainP = styled.p`
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
 
     
-// `;
+`;
 
 // border: 1px solid blue;
 // export const SubP = styled.p`
@@ -88,7 +93,7 @@ export const MainHr = styled.hr`
 // `;
 
 export const MainBtn = styled.a`
-    font-size: clamp(1.4rem, 5vw, 1.80rem);
+    font-size: clamp(1.4rem, 2.5vw, 1.80rem);
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 5px;

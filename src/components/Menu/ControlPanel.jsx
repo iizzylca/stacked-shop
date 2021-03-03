@@ -84,7 +84,7 @@ const ControlPanel = (props) => {
           className={`fa fa-search-minus mx-3 ${zoomOutClass}`}
           onClick={zoomOut}
         />
-        <span>{(scale * 100).toFixed()}%</span>
+        <span>{(scale * 70).toFixed()}%</span>
         <i
           className={`fa fa-search-plus mx-3 ${zoomInClass}`}
           onClick={zoomIn}
