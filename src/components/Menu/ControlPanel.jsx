@@ -91,7 +91,7 @@ const ControlPanel = (props) => {
         />
       </div>
       <div className="mx-3">
-        <a href="/assets/docs/Stacked-menu-first.pdf" download={true} title="download">
+        <a href="/assets/docs/Stacked-menu-first-s.pdf" download={true} title="download">
           <i className="fa fa-download clickable" />
         </a>
       </div>

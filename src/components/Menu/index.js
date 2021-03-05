@@ -25,11 +25,11 @@ export default function Test() {
                 numPages={numPages}
                 pageNumber={pageNumber}
                 setPageNumber={setPageNumber}
-                file="/assets/docs/Stacked-menu-first.pdf"
+                file="/assets/docs/Stacked-menu-first-s.pdf"
             />
             <Document
                 className='pdf'
-                file="/assets/docs/Stacked-menu-first.pdf"
+                file="/assets/docs/Stacked-menu-first-s.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
             >
             <Page pageNumber={pageNumber} scale={scale} />
