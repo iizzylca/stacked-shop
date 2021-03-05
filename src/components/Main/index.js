@@ -40,7 +40,7 @@ const Main = () => {
                                     <FaFacebook />
                                 </SocialIconLink>
                                 <SocialIconLink 
-                                    href='https://www.instagram.com/stacked_sandwich_shop'
+                                    href='https://www.instagram.com/stackedfh'
                                     target='_blank'
                                     aria-label='Redirect to Instagram'
                                     rel='noopener noreferrer'>

@@ -7,13 +7,13 @@ const Location = () => {
             </div>
             <div className='info-wrap'>
                 <h1>Questions?</h1>
-                <p>Information: Coming Soon</p>
+                <p>Information: 845-558-3575 </p>
                 <p>Email: Coming Soon</p>
                 <hr></hr>
                 <h1>Come On In</h1>
                 <p>Address: 68-60 Austin Street, Forest Hills, NY 11375</p>
-                <p>Telephone: Coming Soon</p>
-                <p>Hours: Coming Soon </p>
+                <p>Hours: Monday-Sunday: 11am - 8pm</p>
+                <p>Email: Coming Soon</p>
             </div>
         </section>
     )
